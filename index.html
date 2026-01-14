@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Just Click IT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
+       href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SERVICES</a>
+    <a href="shoppingcart.html" class="w3-bar-item w3-button cart-btn"><i class="fa fa-shopping-cart"></i> CART</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
+    <a href="#cart" class="w3-bar-item w3-button" onclick="toggleFunction()">CART</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- Home Section -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+      JUST CLICK <span class="w3-hide-small">IT</span>
+    </span>
+  </div>
+</div>
+
+<!-- Floating Shopping Cart Button -->
+<a href="cart.html" class="shopping-cart-btn">
+  <i class="fa fa-shopping-cart"></i> Cart
+</a>
+
+<!-- Shopping Cart Info Section -->
+<div class="w3-content w3-container w3-padding-32" id="cart-info">
+  <div class="cart-info-card w3-card-4 w3-padding-large w3-center">
+    <h3><i class="fa fa-shopping-cart"></i> Your Shopping Cart</h3>
+    <p>No items in your cart yet.</p>
+    <a href="cart.html" class="w3-button cart-btn">Go to Cart</a>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT JUST CLICK IT</h3>
+  <p class="w3-center"><em>Making technology simple</em></p>
+  <p>
+    Just Click IT creates easy-to-follow courses designed to help people feel confident using technology. 
+    We offer simple lessons on everyday apps like Microsoft Word and Excel, as well as guidance on using phones, tablets, and new digital tools. 
+    Our courses are practical, beginner-friendly, and explained step by step—no technical jargon. 
+    We also provide customized courses, tailored to what you want to learn, at your own pace, so technology works for you, not the other way around.
+  </p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-laptop w3-margin-right"></i>IT Support</b></p>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="IT Support" width="500" height="333">
+    </div>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>We focus on clear explanations, practical solutions, and personalized support. No jargon — just help that works.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">100+</span><br>Clients Helped
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">200+</span><br>Issues Fixed
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">50+</span><br>Websites Built
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>Years Experience
+  </div>
+</div>
+
+<!-- Services Parallax -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SERVICES</span>
+  </div>
+</div>
+
+<!-- Services Section -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">WHAT WE DO</h3>
+  <p class="w3-center"><em>Simple, reliable courses</em></p>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <p><b>Computer Support</b></p>
+      <p>How to setup your new computer</p>
+    </div>
+    <div class="w3-col m4">
+      <p><b>Website creation</b></p>
+      <p>Basic websites design, HTML, CSS, JavaScript, etc.</p>
+    </div>
+    <div class="w3-col m4">
+      <p><b>Customized Courses</b></p>
+      <p>Beginner-friendly lessons and support on what you want to learn</p>
+    </div>
+  </div>
+</div>
+
+<!-- Available Courses Section -->
+<div class="w3-content w3-container w3-padding-64" id="courses">
+  <h2 class="w3-center">Available Courses</h2>
+  <ul class="course-list w3-center">
+    <li>
+      Excel Basics - $10
+      <a href="https://square.link/u/0RbgC5gU" target="_blank">
+        <button class="w3-button w3-green">Buy Now</button>
+      </a>
+    </li>
+    <li>
+      Excel Advanced - $10
+      <a href="https://square.link/u/v3A3oLxo" target="_blank">
+        <button class="w3-button w3-green">Buy Now</button>
+      </a>
+    </li>
+    <li>
+      CSS Basics - $10
+      <a href="https://square.link/u/eQvV4dzm" target="_blank">
+        <button class="w3-button w3-green">Buy Now</button>
+      </a>
+    </li>
+    <li>
+      Cyber Security - $10
+      <a href="https://square.link/u/RNyEgsyI" target="_blank">
+        <button class="w3-button w3-green">Buy Now</button>
+      </a>
+    </li>
+    <li>
+      HTML Basics - $10
+      <a href="https://square.link/u/7fu9thqJ" target="_blank">
+        <button class="w3-button w3-green">Buy Now</button>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Shopping Cart Section -->
+<div class="w3-content w3-container w3-padding-64" id="cart">
+  <h3 class="w3-center">SHOPPING CART</h3>
+  <p class="w3-center"><em>Courses you have selected</em></p>
+
+  <div class="w3-row w3-padding-16 w3-border w3-round w3-light-grey cart-item">
+    <div class="w3-col m6">
+      <p>Microsoft Word Beginner Course</p>
+    </div>
+    <div class="w3-col m2">
+      <p>$49</p>
+    </div>
+    <div class="w3-col m4 w3-right-align">
+      <button class="w3-button w3-red remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-16 w3-border w3-round w3-light-grey cart-item">
+    <div class="w3-col m6">
+      <p>Excel Advanced Course</p>
+    </div>
+    <div class="w3-col m2">
+      <p>$59</p>
+    </div>
+    <div class="w3-col m4 w3-right-align">
+      <button class="w3-button w3-red remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="w3-center w3-margin-top">
+    <p><b>Total: $108</b></p>
+    <a href="https://square.link/u/checkoutlink" target="_blank" class="w3-button w3-green w3-large">
+      <i class="fa fa-credit-card"></i> Pay Now
+    </a>
+  </div>
+</div>
+
+<!-- Contact Parallax -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">GET IN TOUCH</h3>
+  <p class="w3-center"><em>We’d love to help</em></p>
+  <div class="w3-row w3-section">
+    <div class="w3-col m8 w3-panel">
+      <p><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i> justclickit89@gmail.com</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name" required>
+        <input class="w3-input w3-border w3-margin-top" type="email" placeholder="Email" required>
+        <input class="w3-input w3-border w3-margin-top" type="text" placeholder="Message" required>
+        <button class="w3-button w3-black w3-margin-top"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity">
+  <p>© 2026 Just Click IT</p>
+</footer>
+
+<!-- Floating Shopping Cart Button -->
+<a href="#cart" class="shopping-cart-btn">
+  <i class="fa fa-shopping-cart"></i> Cart
+</a>
+
+<script>
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

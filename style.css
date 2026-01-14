@@ -1,0 +1,205 @@
+.cart-page {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 36px 28px;
+  font-family: "Lato", sans-serif;
+}
+.cart-page h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #0b62d6;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.course-list li {
+  background: #f6fbff;
+  margin: 14px 0;
+  padding: 18px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(11,98,214,0.07);
+  font-weight: 500;
+  color: #222;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+.course-list li:hover {
+  box-shadow: 0 4px 16px rgba(11,98,214,0.13);
+  transform: translateY(-2px);
+}
+.course-list li button {
+  background: #00d9ff;
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(11,98,214,0.10);
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+}
+.course-list li button:hover {
+  background: #0b62d6;
+  color: #fff;
+  transform: scale(1.05);
+}
+.cart-summary {
+  margin-top: 36px;
+  text-align: right;
+  font-size: 1.18rem;
+  color: #222;
+}
+.checkout-btn {
+  background: #00d9ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: .8rem 1.3rem;
+  margin-top: 16px;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(11,98,214,0.10);
+  cursor: pointer;
+  transition: background .18s, color .18s, transform .12s;
+}
+.checkout-btn:hover {
+  background: #0b62d6;
+  color: #fff;
+  transform: translateY(-1px) scale(1.05);
+}
+/* Cart page styles */
+/* Remove duplicate cart styles so only the modern blue-accented style is used for consistency with index.html */
+/* General Styles */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+/* Make all navigation bar buttons black with white text */
+.w3-bar .w3-bar-item.w3-button,
+#myNavbar .w3-bar-item.w3-button,
+.cart-btn {
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+}
+.w3-bar .w3-bar-item.w3-button:hover,
+#myNavbar .w3-bar-item.w3-button:hover,
+.cart-btn:hover {
+  background: #222 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Parallax Backgrounds */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 { background-image: url("d9bbee62-435e-45a4-8130-19d8db38a61a.png"); min-height: 100%; }
+.bgimg-2 { background-image: url("/w3images/parallax2.jpg"); min-height: 400px; }
+.bgimg-3 { background-image: url("/w3images/parallax3.jpg"); min-height: 400px; }
+
+.w3-wide { letter-spacing: 10px; }
+.w3-hover-opacity { cursor: pointer; }
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 { background-attachment: scroll; min-height: 400px; }
+}
+
+/* Available Courses List */
+.course-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.course-list li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.course-list li:hover { transform: translateY(-2px); }
+
+/* Buy Now Buttons */
+.course-list li button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.course-list li button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Shopping Cart Section */
+#cart { background-color: #f9f9f9; border-radius: 10px; padding: 20px; }
+.cart-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 10px; }
+.cart-item p { margin: 0; }
+.remove-btn { padding: 5px 10px; cursor: pointer; }
+
+/* Floating Shopping Cart Button */
+.shopping-cart-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: #e6e6e6;
+  color: #000;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.7rem 1.1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  z-index: 1000;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  text-decoration: none;
+  display: inline-block;
+}
+.shopping-cart-btn:hover {
+  background: #333;
+  color: #fff;
+  border-color: #222;
+  transform: translateY(-1px) scale(1.05);
+}
+/* Remove stray closing brace and fix cursor property */
+.shopping-cart-btn {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .course-list li { flex-direction: column; text-align: center; gap: 10px; }
+}

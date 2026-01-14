@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Services — Just Click IT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
+             href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="aboutpage.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="Servicespage.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SERVICES</a>
+        <a href="shoppingcart.html" class="w3-bar-item w3-button cart-btn"><i class="fa fa-shopping-cart"></i> CART</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Mobile menu -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="aboutpage.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="Servicespage.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
+        <a href="shoppingcart.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CART</a>
+        <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+</div>
+
+<!-- Services Parallax Background -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">SERVICES</span>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">WHAT WE DO</h3>
+    <p class="w3-center"><em>Simple, reliable courses</em></p>
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m4">
+            <p><b>Computer Support</b></p>
+            <p>How to setup your new computer</p>
+        </div>
+        <div class="w3-col m4">
+            <p><b>Website creation</b></p>
+            <p>Basic websites design, HTML, CSS, JavaScript, etc.</p>
+        </div>
+        <div class="w3-col m4">
+            <p><b>Customized Courses</b></p>
+            <p>Beginner-friendly lessons and support on what you want to learn</p>
+        </div>
+    </div>
+</div>
+
+<!-- Available Courses Section -->
+<div class="w3-content w3-container w3-padding-64" id="courses">
+    <h2 class="w3-center">Available Courses</h2>
+    <ul class="course-list w3-center">
+        <li>
+            Excel Basics - $10
+            <a href="https://square.link/u/0RbgC5gU" target="_blank">
+                <button class="w3-button w3-green">Buy Now</button>
+            </a>
+        </li>
+        <li>
+            Excel Advanced - $10
+            <a href="https://square.link/u/v3A3oLxo" target="_blank">
+                <button class="w3-button w3-green">Buy Now</button>
+            </a>
+        </li>
+        <li>
+            CSS Basics - $10
+            <a href="https://square.link/u/eQvV4dzm" target="_blank">
+                <button class="w3-button w3-green">Buy Now</button>
+            </a>
+        </li>
+        <li>
+            Cyber Security - $10
+            <a href="https://square.link/u/RNyEgsyI" target="_blank">
+                <button class="w3-button w3-green">Buy Now</button>
+            </a>
+        </li>
+        <li>
+            HTML Basics - $10
+            <a href="https://square.link/u/7fu9thqJ" target="_blank">
+                <button class="w3-button w3-green">Buy Now</button>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity">
+    <p>© 2026 Just Click IT</p>
+</footer>
+
+<script>
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
